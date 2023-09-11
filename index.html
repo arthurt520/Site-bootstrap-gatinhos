@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: rgba(240, 248, 255, 0.644);
+        }
+        .cabecalho{
+            background-image: url('img/head2.png');
+            background-size: contain;
+            border-bottom:2px solid rgba(0, 255, 255, 0.459);
+            margin-bottom: 20px;
+            position: sticky;
+            top:0;
+            left:0;
+            z-index:3;
+        }
+        .cabecalho h1{
+            color:black;
+            background-color: #f3f3f3;
+        }
+
+        #sobre{
+            margin-bottom: 30px;
+        }
+        
+        #itens .nav-link{
+            color:black;
+            text-align: center;
+        }
+        #itens .nav-link.active{
+            background-color: rgba(0, 255, 255, 0.459);
+        }
+        .card{
+            border:1px solid rgba(0, 255, 255, 0.459);
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Gatinhos Fofinhos</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#itens">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="itens"class="collapse navbar-collapse justify-content-end" >
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#carousel-img">Imagens</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="sobre" class="container">
+        <div class="row">
+            <div class="col-sm-1 col-md-6 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-header">Gatinho sério</div>
+                    <img src="img/gatin-mimind.jpg"/>
+                     <div class="card-body">
+                          <h4 class="card-title">titulo</h1>
+                          <h5 class="card-substitle">subtitulo</h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollit
+                           lores magni vitae possimus voluptate autem culpa error. </p>
+              
+                   </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-1 col-md-6 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-header">Gatinho de Natal</div>
+                    <img src="img/gatin-livro.jpg"/>
+                     <div class="card-body">
+                          <h4 class="card-title">titulo</h1>
+                          <h5 class="card-substitle">subtitulo</h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollit
+                           lores magni vitae possimus voluptate autem culpa error. </p>        
+                   </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-1 col-md-6 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-header">Gatinho observador</div>
+                    <img src="img/gatin-olhando.jpg"/>
+                     <div class="card-body">
+                          <h4 class="card-title">titulo</h1>
+                          <h5 class="card-substitle">subtitulo</h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollit
+                           lores magni vitae possimus voluptate autem culpa error. </p>
+              
+                   </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-1 col-md-6 col-lg-6 col-xl-4 my-3">
+                <div class="card">
+                    <div class="card-header">Gatinho Militar</div>
+                    <img src="img/gatin militar.jpg"/>
+                     <div class="card-body">
+                          <h4 class="card-title">titulo</h1>
+                          <h5 class="card-substitle">subtitulo</h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollit
+                           lores magni vitae possimus voluptate aut.</p>
+              
+                   </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-1 col-md-6 col-lg-6 col-xl-4 my-3">
+                <div class="card">
+                    <div class="card-header">Gatinho das trevas</div>
+                    <img src="img/gatin white.jpg"/>
+                     <div class="card-body">
+                          <h4 class="card-title">titulo</h1>
+                          <h5 class="card-substitle">subtitulo</h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollit
+                           lores magni vitae possimus voluptate autem culpa error. </p>
+              
+                   </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-1 col-md-6 col-lg-6 col-xl-4 my-3">
+                <div class="card">
+                    <div class="card-header">Gatinho preguiçoso</div>
+                    <img src="img/gatin-selva.jpg"/>
+                     <div class="card-body">
+                          <h4 class="card-title">titulo</h1>
+                          <h5 class="card-substitle">subtitulo</h2>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus veritatis saepe ea assumenda in. kskjdkjskdj</p>
+              
+                   </div>
+                 </div>
+            </div>
+           
+        </div>
+        
+    </div>
+
+    <div id="carousel-img" class="carousel carousel-fade slide">
+        <div class="container">
+            <div class="carousel-inner" data-bs-ride="carousel" >
+                <div data-bs-inerval="1000" class="carousel-item active">
+                    <img src="img/chuva de gatins.jpg" alt="Vários gatinhos">
+                </div>
+                <div data-bs-inerval="1000" class="carousel-item">
+                    <img src="img/gatin militar.jpg" alt="gatinho militar">
+                </div>
+                <div data-bs-inerval="1000" class="carousel-item">
+                    <img src="img/gatin white.jpg" alt="gatinho branco">
+                </div>
+                <button data-bs-target="#carousel-img" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button  data-bs-target="#carousel-img" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>     
+        </div>
+    </div>
+    <footer>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Todos os direitos reservados.
+      </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
